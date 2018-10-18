@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.ichigo.weatherapp.Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Explore Weather"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/second_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/main_text"
+        android:text="LEARN AND PLAY WEATHER FORCAST"
+        android:textColor="#e6e6e6"/>
+
+
+    <Button
+        android:id="@+id/google_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with google"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/google_button"
+        android:drawableLeft="@drawable/google_icon"
+        android:paddingLeft="10dp"
+        android:layout_alignEnd="@+id/second_text"
+        android:layout_alignStart="@+id/second_text" />
+
+
+    <Button
+        android:id="@+id/facebook_button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/facebook_button"
+        android:drawableLeft="@drawable/facbook_icon"
+        android:text="Login with facebook"
+        android:paddingLeft="10dp"
+        android:textStyle="normal"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/google_button"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/second_text"
+        android:layout_alignEnd="@+id/second_text" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/row_shape"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/dayandhour"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Today, 12:00pm"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/weather_bigicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayandhour"
+        android:src="@drawable/big_sun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather_bigicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="26 C"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/weather_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/degree"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Fairly Cloudy"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/wind_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_status"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_wind" />
+
+    <TextView
+        android:id="@+id/wind_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wind_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="wind N 5KMH"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/humidity_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_status"
+        android:layout_toRightOf="@id/weather_status"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/ic_rain"/>
+
+    <TextView
+        android:id="@+id/humidity_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidity_icon"
+        android:layout_toRightOf="@id/weather_status"
+        android:layout_marginLeft="20dp"
+        android:text="humidity 90%"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"/>
+
+
+
+
+</RelativeLayout>
